@@ -49,7 +49,7 @@ This document describes FurlX::Coro version 0.01.
 
 =head1 DESCRIPTION
 
-This is a wrapper to C<Furl> for asyncronus HTTP requests with C<Coro>.
+This is a wrapper to C<Furl> for asynchronous HTTP requests with C<Coro>.
 
 This is an experimental module!
 

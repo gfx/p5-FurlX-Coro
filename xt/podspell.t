@@ -101,6 +101,7 @@ workflow
 XS
 MacOS
 MacOSX
+HTTP
 
 versa # vice versa
 ish   # something-ish
