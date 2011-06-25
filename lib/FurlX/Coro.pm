@@ -5,7 +5,7 @@ use warnings;
 
 our $VERSION = '0.01';
 
-use parent qw(Furl);
+use parent qw(Furl Exporter);
 use FurlX::Coro::HTTP;
 
 sub new {
@@ -29,20 +29,33 @@ This document describes FurlX::Coro version 0.01.
 
 =head1 SYNOPSIS
 
+    use strict;
+    use warnings;
+    use Coro;
     use FurlX::Coro;
 
+    my @coros;
+    foreach my $url(@ARGV) {
+        push @coros, async {
+            print "fetching $url\n";
+            my $ua  = FurlX::Coro->new();
+            $ua->env_proxy();
+            my $res = $ua->head($url);
+            printf "%s: %s\n", $url, $res->status_line();
+        }
+    }
+
+    $_->join for @coros;
 
 =head1 DESCRIPTION
 
-# TODO
+This is a wrapper to C<Furl> for asyncronus HTTP requests with C<Coro>.
+
+This is an experimental module!
 
 =head1 INTERFACE
 
-=head2 Functions
-
-=head3 C<< hello() >>
-
-# TODO
+Interface is the same as C<Furl>.
 
 =head1 DEPENDENCIES
 
@@ -56,7 +69,9 @@ to cpan-RT.
 
 =head1 SEE ALSO
 
-L<perl>
+L<Furl>
+
+L<Coro>
 
 =head1 AUTHOR
 

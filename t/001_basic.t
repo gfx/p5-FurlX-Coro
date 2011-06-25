@@ -4,7 +4,6 @@ use Test::More;
 
 use FurlX::Coro;
 
-# test FurlX::Coro here
-pass;
+pass 'TODO: write tests';
 
 done_testing;
