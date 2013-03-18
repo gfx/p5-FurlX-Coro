@@ -5,6 +5,7 @@ use warnings;
 use parent qw(Furl::HTTP);
 use Coro::Select qw(select);
 use Errno qw(EINTR);
+
 # just copied from Furl::HTTP
 sub do_select {
     my($self, $is_write, $sock, $timeout_at) = @_;
@@ -35,7 +36,7 @@ __END__
 
 =head1 NAME
 
-FurlX::Coro::HTTP - Furl::HTTP wrapper for FurlX::COro
+FurlX::Coro::HTTP - Furl::HTTP wrapper for FurlX::Coro
 
 =head1 VERSION
 
@@ -47,7 +48,7 @@ This document describes FurlX::Coro version 0.01.
 
 =head1 DESCRIPTION
 
-# TODO
+FurlX::Coro::HTTP is a coro-friendly Furl::HTTP, which just uses Coro's C<select()> instead of the built-in one. The usage is completely the same as HTTP::Furl.
 
 =head1 SEE ALSO
 
