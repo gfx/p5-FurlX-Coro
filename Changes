@@ -1,5 +1,8 @@
 Revision history for Perl extension FurlX::Coro
 
+1.01 2013-03-18 12:26:19
+    - Fix Build.PL issue
+
 1.00 2013-03-18 10:54:48
     - No code changes; but no longer alpha version
     - Switch to use Module::Build
