@@ -6,6 +6,8 @@ use Module::Build::Pluggable qw(
 );
 
 my $build = Module::Build->new(
+    module_name => 'FurlX::Coro',
+
     license              => 'perl',
     recursive_test_files => 1,
     dynamic_config       => 0,
@@ -18,8 +20,6 @@ my $build = Module::Build->new(
     no_index             => {
         'directory' => [ 'example', 'inc', 't', 'xt' ]
     },
-    name        => 'FurlX-Coro',
-    module_name => 'FurlX::Coro',
 
     test_files => ( -d '.git' || $ENV{RELEASE_TESTING} ) ? 't/ xt/' : 't/',
 

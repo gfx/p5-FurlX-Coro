@@ -1,3 +1,4 @@
+#!perl
 requires 'parent';
 requires 'Coro';
 requires 'Furl';
@@ -12,7 +13,7 @@ on 'build' => sub {
 };
 
 on 'test' => sub {
-    requires 'Test::Requires' =>                  0.06;
+    requires 'Test::Requires' => '0.06';
     requires 'Test::More'     => '0.98';
 };
 
