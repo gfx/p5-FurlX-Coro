@@ -5,7 +5,7 @@ use Module::Build::Pluggable qw(
   GithubMeta
 );
 
-my $build = Module::Build->new(
+my $build = Module::Build::Pluggable->new(
     module_name => 'FurlX::Coro',
 
     license              => 'perl',
