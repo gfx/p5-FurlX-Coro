@@ -25,3 +25,16 @@ cover_db*
 *.gcno
 *.gcov
 *.stackdump
+Makefile
+*.sw[po]
+Build
+_build/
+xshelper.h
+tags
+pm_to_blib
+blib/
+MYMETA.*
+META.json
+README
+^inc/
+FurlX-Coro-*/
