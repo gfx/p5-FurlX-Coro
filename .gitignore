@@ -34,7 +34,12 @@ tags
 pm_to_blib
 blib/
 MYMETA.*
-META.json
 README
 ^inc/
 FurlX-Coro-*/
+/FurlX-Coro-*
+/.build
+/_build_params
+/Build
+!Build/
+!META.json
