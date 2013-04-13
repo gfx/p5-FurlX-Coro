@@ -3,7 +3,7 @@ use 5.008_001;
 use strict;
 use warnings;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 use parent qw(Furl);
 use Furl::HTTP;
@@ -26,7 +26,7 @@ FurlX::Coro - Multiple HTTP requests with Coro
 
 =head1 VERSION
 
-This document describes FurlX::Coro version 1.01.
+This document describes FurlX::Coro version 1.02.
 
 =head1 SYNOPSIS
 

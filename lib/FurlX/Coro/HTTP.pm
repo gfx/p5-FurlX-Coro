@@ -40,7 +40,7 @@ FurlX::Coro::HTTP - Furl::HTTP wrapper for FurlX::Coro
 
 =head1 VERSION
 
-This document describes FurlX::Coro version 1.01.
+This document describes FurlX::Coro version 1.02.
 
 =head1 SYNOPSIS
 

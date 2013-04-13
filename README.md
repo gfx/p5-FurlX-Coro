@@ -4,7 +4,7 @@ FurlX::Coro - Multiple HTTP requests with Coro
 
 # VERSION
 
-This document describes FurlX::Coro version 1.01.
+This document describes FurlX::Coro version 1.02.
 
 # SYNOPSIS
 

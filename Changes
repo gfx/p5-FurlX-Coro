@@ -2,6 +2,10 @@ Revision history for Perl extension FurlX::Coro
 
 {{$NEXT}}
 
+1.02 2013-04-13T05:02:52Z
+
+    - Manage the repo with Minilla
+
 1.01 2013-03-18 12:26:19
     - Fix Build.PL issue
 

@@ -71,7 +71,7 @@
          "web" : "https://github.com/gfx/p5-FurlX-Coro"
       }
    },
-   "version" : "1.01",
+   "version" : "1.02",
    "x_contributors" : [
       "tokuhirom <tokuhirom@gmail.com>",
       "Fuji, Goro <g.psy.va@gmail.com>"
